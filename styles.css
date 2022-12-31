@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+:root{--heading-shadow:  3px 01px 8px #2521EC;}
+
+body,html {
+  height: 100%;
+  margin: 0;}
+
+body {
+font-family: 'Montserrat', sans-serif;
+background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/802/original/backgroundimg.jpg?1672431475");
+}
+
+.header-bg { 
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/747/original/852a6b9b8c1440c687461641c4478cd3_xl.jpg?1672413526");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+.container{display: flex;
+  flex-direction: row;
+  justify-content: right;}
+
+.nav-main, .nav-gallery{ padding-top:2.5rem;
+  padding-right:2rem;}
+
+.nav-main {
+ position:fixed;
+ }
+
+nav a {color:#ffffff;
+  text-decoration: none;
+  font-size:1.5rem;
+  padding-right:10px;
+  font-weight: bold;
+  text-shadow:var(--heading-shadow);
+  }
+
+nav a:hover{color:aqua;}
+
+.main-section {
+  width: 90%;
+  height: 100vh;
+}
+.main-heading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left:10px;
+}
+.main-heading h1 {
+  font-size: 4rem;
+  color:#ffffff;
+  text-shadow: var(--heading-shadow);
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-align: left;
+  margin-left:15px;
+  margin-bottom:0;
+}
+.main-heading h2{
+  color:#ffffff; 
+  margin-left:20px; 
+  text-shadow: var(--heading-shadow);
+  font-size:2.5rem;
+}
+.main-heading p {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #2521EC;
+  text-align: left;
+  padding: 10px;
+  margin-left:15px;
+  max-width: 410px;
+  background:#ffffff9a;
+  border-radius: 5px;
+}
+.bio-main{
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/748/original/Chevy-Metal-8.jpg?1672413532");
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bio{display:flex;
+flex-direction: column;}
+
+.bio-main section {
+  font-size:1.1rem;
+  margin-top:5rem;
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+  padding:10px;
+  max-width:48rem;
+  background-color: #1330eaa7;
+  border-radius: 3px;
+  color:#ffffff;
+}
+.bold {
+  font-weight: bold;
+}
+.italic{font-style: italic;}
+
+.wiky-link{
+  color:#ffffff;
+  text-decoration: none;
+  font-weight: bold;}
+  
+.footer-main
+{text-align:left;
+align-self: center;
+}
+.footer-main, .footer-gallery{
+  color:aqua;
+  text-shadow:  5px 5px 15px #ff00ea;
+  padding-bottom:2px;
+  font-weight: bold;
+}
+.footer-link{
+  color:#ff00ea;
+  text-shadow:  5px 5px 18px aqua;
+  font-size:15px;
+  text-decoration: none;
+}
+.footer-link:hover{color:aqua;
+  text-shadow:  0px 0px 10px #ff00ea;}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; 
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 1.5rem;
+}
+
+.gallery-img {
+  width: 100%;
+  max-width: 410px;
+  height: 300px;
+  object-fit: cover;
+  border: 6px solid white;
+  border-radius: 3px;
+  box-shadow: 5px 10px 20px #343232;
+}
+.gallery-img:hover{
+  transform: scale(1.2);
+}
+.footer-gallery{text-align: center;
+padding-bottom:5px;}
+  
+  
+@media(max-width:300px){
+  .gfold-hidden{display: none;}
+}
+@media(max-width:600px){
+  h1,h2{font-size:2rem;}
+  h2{ margin:0;}
+  nav a{font-size:1rem;}
+  footer,.footer-link{font-size:0.5rem;}
+  .main-heading h1
+    {font-size:1.5rem;
+    margin-top:18rem;
+   text-shadow: 2px 2px 3px #0400f4;
+    }
+  .main-heading h2{font-size:1rem;}
+  .main-heading p{font-size:0.95rem;
+    margin-top:1.5rem;
+    background:#ffffffb7;}
+}
+
+@media(max-width:800px){
+  .bio-main section { 
+    font-size:0.75rem;
+    margin:5rem 2rem 2rem 2rem;
+    margin-left:1.25rem;
+    border-radius: 15px;
+    font-size:0.75rem;}
+  .sm-hidden{display: none;}
+
+}
+@media(max-height:800px){
+  .bio-main section { 
+    font-size:5rem;
+    margin:5rem 2rem 2rem 2rem;
+    margin-left:1.25rem;
+    border-radius: 15px;
+    font-size:0.75rem;
+  max-width: 85%;}
+}
